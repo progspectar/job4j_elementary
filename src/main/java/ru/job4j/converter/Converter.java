@@ -10,12 +10,24 @@ public class Converter {
         return value / 60;
     }
 
+    public static float dollarToEuro(float value) {
+        return value * 60 / 70;
+    }
+
+    public static float euroToDollar(float value) {
+        return value * 70 / 60;
+    }
+
     public static void main(String[] args) {
         float euro = Converter.rubleToEuro(140);
         System.out.println("140 rubles are " + euro + " euro.");
-
         float dollars = Converter.rubleToDollar(601);
         System.out.println("601 rubles is " + dollars + " dollars.");
+        euro = Converter.dollarToEuro(20);
+        System.out.println("20 dollars is " + euro + " euro.");
+        dollars = Converter.euroToDollar(50);
+        System.out.println("50 euro is " + dollars + " dollars.");
+
     }
 }
 

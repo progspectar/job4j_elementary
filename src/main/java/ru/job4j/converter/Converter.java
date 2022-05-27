@@ -19,15 +19,29 @@ public class Converter {
     }
 
     public static void main(String[] args) {
-        float euro = Converter.rubleToEuro(140);
-        System.out.println("140 rubles are " + euro + " euro.");
-        float dollars = Converter.rubleToDollar(601);
-        System.out.println("601 rubles is " + dollars + " dollars.");
-        euro = Converter.dollarToEuro(20);
-        System.out.println("20 dollars is " + euro + " euro.");
-        dollars = Converter.euroToDollar(50);
-        System.out.println("50 euro is " + dollars + " dollars.");
+        float in = 140;
+        float expected = 2;
+        float out = Converter.rubleToEuro(in);
+        boolean passed = expected == out;
+        System.out.println(in + " rubles are " + out + ". Test result : " + passed);
 
+        in = 600;
+        expected = 10;
+        out =  Converter.rubleToDollar(in);
+        passed = expected == out;
+        System.out.println(in + " dollars are " + out + ". Test result : " + passed);
+
+        in = 420;
+        expected = 360;
+        out =  Converter.dollarToEuro(in);
+        passed = expected == out;
+        System.out.println(in + " dollars are " + out + ". Test result : " + passed);
+
+        in = 840;
+        expected = 980;
+        out =  Converter.euroToDollar(in);
+        passed = expected == out;
+        System.out.println(in + " dollars are " + out + ". Test result : " + passed);
     }
 }
 

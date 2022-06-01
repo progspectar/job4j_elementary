@@ -9,14 +9,6 @@ import static org.junit.Assert.*;
 public class ConverterTest {
 
     @Test
-    public void rubleToEuro() {
-    }
-
-    @Test
-    public void rubleToDollar() {
-    }
-
-    @Test
     public void whenConvert0RblThen0Euro() {
         float in = 0;
         float expected = 0;

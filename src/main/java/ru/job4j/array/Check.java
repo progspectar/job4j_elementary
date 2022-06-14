@@ -6,7 +6,8 @@ public class Check {
         boolean sample = data[0];
         for (int i = 1; i < data.length; i++) {
             if (sample != data[i]) {
-                return false;
+                result = false;
+                break;
             }
         }
         return result;

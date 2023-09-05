@@ -1,7 +1,7 @@
 package ru.job4j.condition;
 
 import org.junit.Assert;
-import org.junit.Test;
+import org.testng.annotations.Test;
 
 public class DummyBotTest {
 

@@ -60,7 +60,7 @@ public class PasswordValidator {
             return Status.NOT_HAS_LOWCASE;
         }
         if (!hasDigit) {
-            return Status.NOT_HAS_LOWCASE;
+            return Status.NOT_HAS_DIGIT;
         }
         if (!hasSpecial) {
             return Status.NOT_HAS_SPECIAL;

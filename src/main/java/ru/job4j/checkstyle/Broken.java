@@ -13,10 +13,9 @@ public class Broken {
     }
 
     /* test single-line comment */
-    // test single-line comment
     public void media(Object obj) {
         if (obj != null) { /* test single-line comment */
-            System.out.println(obj); //  test single-line comment
+            System.out.println(obj);
         }
     }
 

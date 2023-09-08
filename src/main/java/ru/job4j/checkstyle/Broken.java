@@ -12,14 +12,13 @@ public class Broken {
     public void echo() {
     }
 
-    /* test single-line comment */
     public void media(Object obj) {
-        if (obj != null) { /* test single-line comment */
+        if (obj != null) {
             System.out.println(obj);
         }
     }
 
-   public void method(int a, int b, int c, int d, int e, int f, int g) {
+    public void method(int a, int b, int c, int d, int e, int f, int g) {
 
     }
 }

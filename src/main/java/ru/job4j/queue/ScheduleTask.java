@@ -11,14 +11,14 @@ public class ScheduleTask {
     }
 
     public void addTask(Task task) {
-        queue.offer(task);
+
     }
 
     public Task readTask() {
-        return queue.peek();
+        return null;
     }
 
     public Task getTask() {
-        return queue.poll();
+        return null;
     }
 }

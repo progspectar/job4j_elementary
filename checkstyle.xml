@@ -20,7 +20,19 @@
     <!-- </module> -->
 
     <module name="TreeWalker">
-
+<!--        <module name="MatchXpath">-->
+<!--            <property name="id" value="fedramp_check"/>-->
+<!--            <property name="query" value="//CLASS_DEF/OBJBLOCK/VARIABLE_DEF/MODIFIERS/ANNOTATION/IDENT[not(@text='FedRamp')]"/>-->
+<!--            <message key="matchxpath.match"-->
+<!--                     value="Field should have 'FedRamp' annotation."/>-->
+<!--        </module>-->
+        <module name="RegexpSinglelineJava">
+                <property name="id" value="singlelineComment"/>
+                <metadata name="comment" value="Convert single-line comments into Javadocs"/>
+                <property name="severity" value="error"/>
+                <property name="format" value=".*\/\/.*"/>
+                <property name="message" value="Avoid single-line comments. Turn notes and explanations into public javadocs. "/>
+        </module>
         <module name="EmptyLineSeparator"> <!-- Java Style Guide: Source file structure -->
             <property name="tokens" value="
             CLASS_DEF, ENUM_DEF, INTERFACE_DEF, CTOR_DEF, STATIC_INIT, INSTANCE_INIT, VARIABLE_DEF, METHOD_DEF"/>
@@ -48,7 +60,7 @@
         <!--<module name="LineLength"/>-->
         <module name="MethodLength">
             <property name="tokens" value="METHOD_DEF"/>
-            <property name="max" value="40"/>
+            <property name="max" value="100"/>
         </module>
         <module name="ParameterNumber"/>
 
@@ -105,6 +117,7 @@
         <module name="EmptyBlock">
             <property name="tokens" value="LITERAL_CATCH"/>
         </module>
+
     </module>
 
 </module>

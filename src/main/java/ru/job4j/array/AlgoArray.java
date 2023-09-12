@@ -1,6 +1,9 @@
 package ru.job4j.array;
 
 public class AlgoArray {
+
+    private String test; /* safdf a */
+
     public static void swap(int[] array, int source, int dest) {
         int temp = array[source];
         array[source] = array[dest];

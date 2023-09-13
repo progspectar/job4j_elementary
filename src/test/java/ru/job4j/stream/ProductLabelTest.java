@@ -1,6 +1,9 @@
 package ru.job4j.stream;
 
 import org.junit.jupiter.api.Test;
+import ru.job4j.stream.Label;
+import ru.job4j.stream.Product;
+import ru.job4j.stream.ProductLabel;
 
 import java.util.Arrays;
 import java.util.List;

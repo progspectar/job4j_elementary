@@ -11,3 +11,7 @@ public class Profiles {
                 .collect(Collectors.toList());
     }
 }
+
+    public static List<Address> collectSortWithoutDuplicate(List<Profile> profiles) {
+        return new ArrayList<>();
+    }
